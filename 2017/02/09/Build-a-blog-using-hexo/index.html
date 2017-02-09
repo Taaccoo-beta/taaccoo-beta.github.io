@@ -13,11 +13,11 @@
 
     <title>
         
-          Hello World - 鹏博的博客 | Pengbo&#39;s blog
+          Build a blog using hexo - 鹏博的博客 | Pengbo&#39;s blog
         
     </title>
 
-    <link rel="canonical" href="http://taaccoo.com/2017/02/08/hello-world/">
+    <link rel="canonical" href="http://taaccoo.com/2017/02/09/Build-a-blog-using-hexo/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -152,7 +152,7 @@
 <!-- Post Header -->
 <style type="text/css">
     header.intro-header{
-        background-image: url('/mdImg/hello-world/home-bg.jpg')
+        background-image: url('/mdImg/home-bg.jpg')
     }
 </style>
 <header class="intro-header" >
@@ -162,14 +162,16 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                          <a class="tag" href="/tags/#Test" title="Test">Test</a>
+                          <a class="tag" href="/tags/#技术" title="技术">技术</a>
+                        
+                          <a class="tag" href="/tags/#中文" title="中文">中文</a>
                         
                     </div>
-                    <h1>Hello World</h1>
-                    <h2 class="subheading">First blog</h2>
+                    <h1>Build a blog using hexo</h1>
+                    <h2 class="subheading"></h2>
                     <span class="meta">
-                        Posted by Pengbo on
-                        2017-02-08
+                        Posted by PengboHu on
+                        2017-02-09
                     </span>
                 </div>
             </div>
@@ -188,9 +190,27 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <h2 id="欢迎"><a href="#欢迎" class="headerlink" title="欢迎"></a>欢迎</h2><p>终于新博客开通了，这篇文章一方面是测试，另一方面面也算一个模板。<br>博客制作过程未来会发一篇文章详解。</p>
-<h2 id="图片测试"><a href="#图片测试" class="headerlink" title="图片测试"></a>图片测试</h2><p><img src="/mdImg/hello-world/home-bg.jpg" alt="java-javascript"></p>
-<h2 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h2><p>本博客代码改编于<a href="https://github.com/kaijun/hexo-theme-huxblog/" target="_blank" rel="external">hexo-theme-huxblog</a></p>
+                <p><a href="https://github.com/hexojs/hexo" target="_blank" rel="external">hexo</a>是一款基于Node.js的静态博客框架,我们可以将其搭建在github page上或者其他服务器，但是由于github page速度慢而且空间少，所以我选择将其搭建在BAE上。下面我将介绍一下我如何将博客搭建在BAE上。</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul>
+<li>安装<a href="https://git-scm.com/downloads" target="_blank" rel="external">git</a></li>
+<li>下载<a href="https://nodejs.org/en/" target="_blank" rel="external">node.js</a>，下载通用版就可以</li>
+</ul>
+<h2 id="开始搭建博客"><a href="#开始搭建博客" class="headerlink" title="开始搭建博客"></a>开始搭建博客</h2><p>建立一个博客文件夹,并安装hexo<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">mkdir blog</div><div class="line">cd blog</div><div class="line">npm install hexo-cli -g</div></pre></td></tr></table></figure></p>
+<p>然后初始化一个博客<br><code>hexo init</code><br>这时一个简单的博客就已经完成，接下来看一下这个博客的样子,输入一下代码然后打开浏览器输入localhost:4000/就可以看到博客的外观。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo g</div><div class="line">hexo s</div></pre></td></tr></table></figure></p>
+<p>这样一个最简单的博客就已经完成，接下来我们对博客进行优化。</p>
+<h2 id="博客优化"><a href="#博客优化" class="headerlink" title="博客优化"></a>博客优化</h2><p>博客优化其实就是添加功能，网上有很多主题源码可以直接拿来修改。当然也可以自己制作主题，对于新手来说可以直接选择主题来用。可以在<a href="https://hexo.io/themes/" target="_blank" rel="external">这里</a>挑选喜欢的主题。</p>
+<p>一般相应的主题仓库中都会有详细的说明教你怎么修改。下面我就简单的说一下大致流程，首先找到喜欢的主题之后，将代码clone到你的themes文件夹中，进入git bash,然后进入themes文件夹中。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd themes</div><div class="line">git clone https://github.com/choiced-themes.git</div></pre></td></tr></table></figure></p>
+<p>然后更改根目录(注意不是主题根目录而是外面blog文件夹下的根目录)中_config.yml的themes字段<br><code>themes:choiced-themes</code><br>然后生成一下就可以看到简单的效果<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo g  </div><div class="line">hexo s</div></pre></td></tr></table></figure></p>
+<p>如果成功就可以开始进一步修改_config.yml添加功能，至于怎么添加，相应的github仓库中都有详细的说明，就跟着说明文档改就可以了。修改过程不是很复杂但是很容易遇到各种问题，这个时候就要多看看github中的Issues了，当你把问题都解决的时候就会对hexo有一个深入的了解了。</p>
+<p>至此一个博客就算完成了。接下来讲一下怎么部署到BAE中。当然也可以部署到github page上，部署到github page上的教程网上非常多，这里就不提了。</p>
+<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><p>首先是域名，域名我是购买的阿里云上的万网域名，阿里云也提供域名解析服务。由于使用的是国内的空间，所以需要备案，备案的话可以按照阿里云上的步骤进行。如果不想备案，可以使用国外的主机。</p>
+<p>首先进入<a href="https://login.bce.baidu.com/" target="_blank" rel="external">百度云</a>注册账号<br>然后安装如下步骤购买BAE,点击下面按钮<br><img src="/mdImg/1/1.png" alt="BAE"><br>然后点击 “添加部署”<br><img src="/mdImg/1/2.png" alt="deploy"><br>然后依照下面进行设置，其余选项可以随意填写<br><img src="/mdImg/1/3.png" alt="buy"></p>
+<p>接下来就是域名解析和代码上传了。首先我们先解析域名。首先我们可以看到BAE中的域名<br><img src="/mdImg/1/4.png" alt="name"><br>接下来我们将自己的域名跟BAE中的域名进行绑定</p>
+<p>首先进入阿里云进行域名解析，按照如下方式填写(@字段表示空，而不是填写了@)，添加两个字段的目的是为了www.abc.com和abc.com都可以使用，这样在浏览器中输入abc.com不用输入www也可以解析。<br><img src="/mdImg/1/5.png" alt="jiexi"><br>接下来我们在百度云BAE中绑定域名<br><img src="/mdImg/1/6.png" alt="bing"><br>这样我们在浏览器输入<a href="http://www.taaccoo.com" target="_blank" rel="external">www.taaccoo.com</a>和<a href="http://taaccoo.com">taaccoo.com</a>都可以进入网站。</p>
+<p>接下来我们将代码上传到BAE中，首先进入”发布设置”中打开自动发布按钮。<br><img src="/mdImg/1/7.png" alt="deploy"><br>上图中我们可以看到git仓库地址,下面我们修改博客根目录下面_config.yml文件中的git设置<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: https://git.duapp.com/XXXXX</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
+<p>然后进入.deploy_git/.git/config文件中添加如下字段，参考于<a href="http://www.netpi.me/code/hexo-bae-configure" target="_blank" rel="external">这个博客</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[http]</div><div class="line">      postBuffer = 524288000</div></pre></td></tr></table></figure></p>
+<p>之后安装deploy工具<br><code>npm install hexo-deployer-git --save</code><br>然后执行 <code>hexo d</code>将代码上传到BAE中<br>在浏览器中输入你的域名就可以看到你的博客了。</p>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>花费了三天多的时间搞好了这个博客，我的博客主题使用的是<a href="http://huangxuan.me" target="_blank" rel="external">这个</a>,博客修改方式参考的是<a href="https://github.com/Kaijun/hexo-theme-huxblog" target="_blank" rel="external">这个</a>。最后对两位作者表示感谢。</p>
 
 
                 <hr>
@@ -200,11 +220,11 @@
                 </style>
                 <div class="ds-share"
                     style="text-align: right"
-                    data-thread-key="2017/02/08/hello-world/"
-                    data-title="Hello World"
-                    data-url="http://taaccoo.com/2017/02/08/hello-world/"
-                    data-images="http://taaccoo.com/2017/02/08/hello-world//mdImg/hello-world/home-bg.jpg"
-                    data-content="欢迎终于新博客开通了，这篇文章一方面是测试，另一方面面也算一个模板。博客制作过程未来会发一篇文... | 鹏博的博客 | Pengbo&#39;s blog " >
+                    data-thread-key="2017/02/09/Build-a-blog-using-hexo/"
+                    data-title="Build a blog using hexo"
+                    data-url="http://taaccoo.com/2017/02/09/Build-a-blog-using-hexo/"
+                    data-images="http://taaccoo.com/2017/02/09/Build-a-blog-using-hexo//mdImg/home-bg.jpg"
+                    data-content="hexo是一款基于Node.js的静态博客框架,我们可以将其搭建在github page上或者... | 鹏博的博客 | Pengbo&#39;s blog " >
                     <div class="ds-share-inline">
                       <ul  class="ds-share-icons-16">
                         <li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">分享到：</a></li>
@@ -222,10 +242,10 @@
 
                 <ul class="pager">
                     
-                        <li class="previous">
-                            <a href="/2017/02/09/Build-a-blog-using-hexo/" data-toggle="tooltip" data-placement="top" title="Build a blog using hexo">&larr; Previous Post</a>
-                        </li>
                     
+                        <li class="next">
+                            <a href="/2017/02/08/hello-world/" data-toggle="tooltip" data-placement="top" title="Hello World">Next Post &rarr;</a>
+                        </li>
                     
                 </ul>
 
@@ -233,9 +253,9 @@
                 <!-- 多说评论框 start -->
                 <div class="comment">
                     <div class="ds-thread"
-                        data-thread-key="2017/02/08/hello-world/"
-                        data-title="Hello World"
-                        data-url="http://taaccoo.com/2017/02/08/hello-world/" >
+                        data-thread-key="2017/02/09/Build-a-blog-using-hexo/"
+                        data-title="Build a blog using hexo"
+                        data-url="http://taaccoo.com/2017/02/09/Build-a-blog-using-hexo/" >
                     </div>
                 </div>
                 <!-- 多说评论框 end -->
@@ -281,7 +301,9 @@
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
                        
-                          <a class="tag" href="/tags/#Test" title="Test">Test</a>
+                          <a class="tag" href="/tags/#技术" title="技术">技术</a>
+                        
+                          <a class="tag" href="/tags/#中文" title="中文">中文</a>
                         
                     </div>
                 </section>
@@ -320,8 +342,8 @@
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = "hexo-theme-huxblog";
-    var disqus_identifier = "http://taaccoo.com/2017/02/08/hello-world/";
-    var disqus_url = "http://taaccoo.com/2017/02/08/hello-world/";
+    var disqus_identifier = "http://taaccoo.com/2017/02/09/Build-a-blog-using-hexo/";
+    var disqus_url = "http://taaccoo.com/2017/02/09/Build-a-blog-using-hexo/";
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
