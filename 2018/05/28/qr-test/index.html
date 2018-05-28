@@ -13,11 +13,11 @@
 
     <title>
         
-          About - 鹏博的博客 | Pengbo&#39;s blog
+          qr test - 鹏博的博客 | Pengbo&#39;s blog
         
     </title>
 
-    <link rel="canonical" href="http://taaccoo.com/about/">
+    <link rel="canonical" href="http://taaccoo.com/2018/05/28/qr-test/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -144,182 +144,143 @@
 
 
     <!-- Main Content -->
-    <!-- Page Header -->
-<header class="intro-header" style="background-image: url('/img/about-bg.jpg')">
+    
+<!-- Image to hack wechat -->
+<!-- <img src="http://taaccoo.com/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        background-image: url('/mdImg/hello-world/home-bg.jpg')
+    }
+</style>
+<header class="intro-header" >
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    <h1>About</h1>
-                    <!--<hr class="small">-->
-                    <span class="subheading">Rules are made to be broken.</span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                          <a class="tag" href="/tags/#Test" title="Test">Test</a>
+                        
+                    </div>
+                    <h1>qr test</h1>
+                    <h2 class="subheading">Just a test</h2>
+                    <span class="meta">
+                        Posted by Pengbo on
+                        2018-05-28
+                    </span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
 
-
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        
-
-<!-- USE SIDEBAR -->
     <!-- Post Container -->
             <div class="
-                col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                post-container
-            ">
-            
-                <p>大家好，我是胡鹏博，一名神经科学硕士生，我将会在这里发布我的生活感悟，学习笔记，以及一些技术文章。<br><br><br>Hello, I’m Pengbo Hu, a thrid year Master student in neuroscience, I will be here to post my life experience, learning notes, and some technical articles.</p>
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <p><a href="http://taaccoo.com/2018/01/14/Build-a-blog-using-hexo/"><br>    <button>申请入群</button><br></a></p>
 
 
-                <!-- 如果开启评论功能 -->
+                <hr>
+
                 
-                    <hr>
 
+                <ul class="pager">
                     
-
                     
-                    <!-- disqus 评论框 start -->
-                    <div class="comment">
-                        <div id="disqus_thread" class="disqus-thread"></div>
-                    </div>
-                    <!-- disqus 评论框 end -->
+                        <li class="next">
+                            <a href="/2018/01/14/Build-a-blog-using-hexo/" data-toggle="tooltip" data-placement="top" title="Build a blog using hexo">Next Post &rarr;</a>
+                        </li>
                     
+                </ul>
 
+                
 
-                    
-
-                    
-                    <!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
-                    <script type="text/javascript">
-                        /* * * CONFIGURATION VARIABLES * * */
-                        var disqus_shortname = "taaccoo";
-                        var disqus_identifier = "http://taaccoo.com/about/index.html";
-                        var disqus_url = "http://taaccoo.com/about/index.html";
-
-                        (function() {
-                            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                        })();
-
-                        
-                    </script>
-                    <!-- disqus 公共JS代码 end -->
-                    
-
-
-
+                
+                <!-- disqus 评论框 start -->
+                <div class="comment">
+                    <div id="disqus_thread" class="disqus-thread"></div>
+                </div>
+                <!-- disqus 评论框 end -->
                 
 
             </div>
-    <!-- Sidebar Container -->
+    <!-- Side Catalog Container -->
+        
             <div class="
-                col-lg-3 col-lg-offset-0
-                col-md-3 col-md-offset-0
-                col-sm-12
-                col-xs-12
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
                 sidebar-container
-            ">
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+        
+
+    <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
                 <!-- Featured Tags -->
                 
                 <section>
                     <!-- no hr -->
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
-                        
-                            
-                        
-                            
-                        
-                            
-                            <a href="/tags/#Test" title="Test" rel="2">Test</a>
-                            
+                       
+                          <a class="tag" href="/tags/#Test" title="Test">Test</a>
                         
                     </div>
                 </section>
                 
 
-                <!-- Short About -->
-                <section class="visible-md visible-lg">
-                    <hr><h5><a href="/about/">ABOUT ME</a></h5>
-                    <div class="short-about">
-
-                        
-                            <img src="/img/avatar.jpg" />
-                        
-
-                        
-                            <p>To be human is to be transhuman</p>
-                        
-
-                        <!-- SNS Link -->
-                        <ul class="list-inline">
-                            
-                            
-                            
-                                <li>
-                                    <a target="_blank" href="https://www.zhihu.com/people/pengbo-hu">
-                                        <span class="fa-stack fa-lg">
-                                            <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa  fa-stack-1x fa-inverse">知</i>
-                                        </span>
-                                    </a>
-                                </li>
-                            
-
-                            
-                                <li>
-                                    <a target="_blank" href="http://weibo.com/u/1779398501">
-                                        <span class="fa-stack fa-lg">
-                                            <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
-                                        </span>
-                                    </a>
-                                </li>
-                            
-
-                            
-                                <li>
-                                    <a target="_blank" href="https://www.facebook.com/taaccoo">
-                                        <span class="fa-stack fa-lg">
-                                            <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                        </span>
-                                    </a>
-                                </li>
-                            
-
-                            
-                                <li>
-                                    <a target="_blank"  href="https://github.com/taaccoo-beta">
-                                        <span class="fa-stack fa-lg">
-                                            <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                        </span>
-                                    </a>
-                                </li>
-                            
-                            
-                            
-                            
-                        </ul>
-                    </div>
-                </section>
-                
                 <!-- Friends Blog -->
                 
             </div>
-        
+
+        </div>
     </div>
-</div>
+</article>
+
+
+
+
+<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "taaccoo";
+    var disqus_identifier = "http://taaccoo.com/2018/05/28/qr-test/";
+    var disqus_url = "http://taaccoo.com/2018/05/28/qr-test/";
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- disqus 公共JS代码 end -->
+
+
+
+
 
 
     <!-- Footer -->
@@ -480,6 +441,50 @@
 
 
 <!-- Side Catalog -->
+
+<script type="text/javascript">
+    function generateCatalog (selector) {
+        var P = $('div.post-container'),a,n,t,l,i,c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#"+$(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="'+i+'" rel="nofollow">'+t+'</a>');
+            l = $('<li class="'+n+'_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    // toggle side catalog
+    $(".catalog-toggle").click((function(e){
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    /*
+     * Doc: https://github.com/davist11/jQuery-One-Page-Nav
+     * Fork by Hux to support padding
+     */
+    async("/js/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
 
 
 
